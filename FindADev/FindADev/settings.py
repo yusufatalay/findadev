@@ -76,8 +76,11 @@ WSGI_APPLICATION = 'FindADev.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'DevFindDB',
+        'USER': 'postgres',
+        'PASSWORD': 'Killer14', # this is a dummy password for the postgres user, i don't need to hide it in the code
+        'HOST': 'localhost',
     }
 }
 
